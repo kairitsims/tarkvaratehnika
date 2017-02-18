@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Esileht</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <ul> 
+        <li><a href="leht1.html">Esileht</a></li>
+        
+        <li><a href="leht2.html">Info</a></li>
+    </ul>
+    
+    <h1>Oled lehel, mis on valminud õppeeesmärgil.</h1>
+
+</body>
+</html>
