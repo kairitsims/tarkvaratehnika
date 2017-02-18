@@ -9,13 +9,11 @@
 
 <body>
  
- <h1>F.I.T.T</h1>
+ <div class="main">
+ <img src="Fitt_logo.jpg" width="250"/>
  
  <form>
     <table class=tableStyle>
-        <tr>
-            <td><h2>Logi sisse</h2></td>
-        </tr>
         <tr>
             <td>Kasutajanimi: </td>
             <td><input type="text" name="username" autocomplete="off"></td>
@@ -24,18 +22,13 @@
             <td>Parool:</td>
             <td><input type="password" name="password" autocomplete="off"></td>
         </tr>
-        <tr>
-            <td><button>Logi sisse</button></td>
-        </tr>
-        <tr>
-            <td><a href="signup.php">Loo konto</a></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><?php echo $errorMessage; ?></td>
-        </tr>
+
     </table>
+    <button>Logi sisse</button>
+    <button>Loo konto</button>
 </form>
+</div>
+
 
 </body>
 </html>
