@@ -51,18 +51,18 @@ ul {
     margin: 0; /*Eemaldab brauseri standartseaded*/
     padding: 0; /*Eemaldab brauseri standartseaded*/
     overflow: hidden;
-    background-color: #937bfa;
+    background-color: #558ED5;
 }
 
 li {
-    float: left; /*Selle abil sain menüü horisontaalseks*/
+    /*Selle abil sain menüü horisontaalseks*/
 }
 
 li a {
     display: block; /*ruudu kujulised menüülingid*/
     color: #414141; /*menüü teksti värv*/
     text-align: center;
-    padding: 10px 20px; /*Menüükastide suurused*/
+    padding: 9px 10px; /*Menüükastide suurused*/
     text-decoration: none;
 }
 
@@ -70,11 +70,35 @@ li a:hover {
     background-color: #dbdbdb; /*Peale liikudes muudab värvi menüü valik*/
 }
 
-.menuu{
-	background-color: #558ED5;
+
+button{
+	height: 225px;
+	width: 225px;
+}
+.mencol{
+	height: 225px;
+	width: 225px;
+	padding-left: 44px;
+	float: left;
 }
 
-.kast{
-	heigth: 50px;
-	width: 50px;
+.downcol{
+	height: 225px;
+	width: 692px;
+	float: left;
+}
+
+
+.maincol{
+	width: 1000px;
+    height: 500px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+img{
+	width: 225px;
+	height: 225px;
 }
