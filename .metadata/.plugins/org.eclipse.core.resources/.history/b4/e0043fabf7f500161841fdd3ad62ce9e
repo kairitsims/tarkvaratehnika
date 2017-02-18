@@ -19,9 +19,8 @@ body{
     margin-right: auto;
 }
 
-
-a.button {
-	background-color: #558ED5;
+button{
+    background-color: #558ED5;
     color: white;
     border: none;
     margin-left: auto;
@@ -34,9 +33,8 @@ a.button {
     margin-top: 20px;
     width: 70px;
     height: 50px;
-    text-align: center;
-    line-height: 21px;
 }
+
 
 input[type="text"] {
     width: 150px;

@@ -25,8 +25,8 @@
 
     </table>
     
-    <a href="main.html" class="button">Logi sisse</a>
-    <a href="main.html" class="button">Loo konto</a>
+    <a href="main.html" class="button">Go to Google</a>
+    <button>Loo konto</button>
 </form>
 </div>
 

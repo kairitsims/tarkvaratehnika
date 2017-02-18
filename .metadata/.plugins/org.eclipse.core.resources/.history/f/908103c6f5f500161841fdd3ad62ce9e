@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
@@ -24,9 +24,8 @@
         </tr>
 
     </table>
-    
-    <a href="main.html" class="button">Logi sisse</a>
-    <a href="main.html" class="button">Loo konto</a>
+    <button>Logi sisse</button>
+    <button>Loo konto</button>
 </form>
 </div>
 

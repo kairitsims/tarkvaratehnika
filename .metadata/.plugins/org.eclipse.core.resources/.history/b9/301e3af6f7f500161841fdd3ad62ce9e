@@ -34,8 +34,6 @@ a.button {
     margin-top: 20px;
     width: 70px;
     height: 50px;
-    text-align: center;
-    line-height: 21px;
 }
 
 input[type="text"] {

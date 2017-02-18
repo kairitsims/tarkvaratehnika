@@ -25,8 +25,11 @@
 
     </table>
     
-    <a href="main.html" class="button">Logi sisse</a>
-    <a href="main.html" class="button">Loo konto</a>
+    <form action="main.html">
+    <input type="submit" value="Logi Sisse" />
+	</form>
+	
+    <button>Loo konto</button>
 </form>
 </div>
 
