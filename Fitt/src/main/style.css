@@ -69,3 +69,12 @@ li a {
 li a:hover {
     background-color: #dbdbdb; /*Peale liikudes muudab värvi menüü valik*/
 }
+
+.menuu{
+	background-color: #558ED5;
+}
+
+.kast{
+	heigth: 50px;
+	width: 50px;
+}
