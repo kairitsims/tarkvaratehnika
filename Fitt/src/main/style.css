@@ -74,6 +74,9 @@ li a:hover {
 button{
 	height: 225px;
 	width: 225px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 .mencol{
 	height: 225px;
