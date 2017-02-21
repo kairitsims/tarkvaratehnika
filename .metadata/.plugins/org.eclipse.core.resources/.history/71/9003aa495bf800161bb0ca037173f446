@@ -12,16 +12,11 @@
  <div>
 	<img src="Fitt_logo.jpg" width="250"/> 
 	<img src="push_ups.jpg" width="400"/> 
-	<a href="main.html" class="button">Tagasi</a>
+
+<a href="main.html" class="button">Tagasi</a>
+
 </div>
 
-<div>
-<p>Lama näoga põranda suunas. Toeta keharaskus kätele.</p>
-<p>Hoia keha sirgelt samalajal käsi kõverdades.</p>
-
-<p>See harjutus treenib rinna, õla, biitsepsi, selja </p>
-<p>ja jalalihaseid.</p>
-</div>
 
 </body>
 </html>
