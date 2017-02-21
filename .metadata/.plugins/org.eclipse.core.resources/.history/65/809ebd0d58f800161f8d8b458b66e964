@@ -12,8 +12,8 @@
 		<div class="upcol">
 			<img src="Fitt_logo.jpg"></img>
 			<button onclick="location.href='exercises.html'" style="background-image:url(abs.jpg)"></button>
-			<button onclick="location.href='exercises.html'" style="background-image:url(arm.jpg)"></button>
-			<button onclick="location.href='exercises.html'" style="background-image:url(back.jpg)"></button>
+			<button onclick="location.href='arm.html'" style="background-image:url(arm.jpg)"></button>
+			<button onclick="location.href='back.html'" style="background-image:url(back.jpg)"></button>
 			</div><div class="mencol">
     			<ul class="menu">
         			<li><a href="description.php">Lisa treening</a></li>
@@ -25,9 +25,9 @@
     			</ul>
 			</div>
 			<div class="downcol">
-			<button onclick="location.href='exercises.html'" style="background-image:url(leg.jpg)"></button>
-			<button onclick="location.href='exercises.html'" style="background-image:url(butt.jpg)"></button>
-			<button onclick="location.href='exercises.html'" style="background-image:url(fullbody.jpg)"></button>
+			<button onclick="location.href='leg.html'" style="background-image:url(leg.jpg)"></button>
+			<button onclick="location.href='butt.html'" style="background-image:url(butt.jpg)"></button>
+			<button onclick="location.href='fullbody.html'" style="background-image:url(fullbody.jpg)"></button>
 		</div>
 	</div>
 

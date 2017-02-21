@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Esileht</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="maincol">
+		<div class="upcol">
+			<img src="Fitt_logo.jpg"></img>
+			<button style="background-image:url(abs.jpg)"></button>
+			<button style="background-image:url(arm.jpg)"></button>
+			<button style="background-image:url(back.jpg)"></button>
+			</div><div class="mencol">
+    			<ul class="menu">
+        			<li><a href="description.php">Lisa treening</a></li>
+        			<li><a href="description.php">Tehtud treeningute ajalugu</a></li>
+        			<li><a href="tweet.php">Toitumispäevik</a></li>
+        			<li><a href="search.php">Eesmärgid</a></li>
+        			<li><a href="logout.php">Kaal</a></li>
+        			<li><a href="index.html">Logi välja</a></li>
+    			</ul>
+			</div>
+			<div class="downcol">
+			<button style="background-image:url(leg.jpg)"></button>
+			<button style="background-image:url(butt.jpg)"></button>
+			<button style="background-image:url(fullbody.jpg)"></button>
+		</div>
+	</div>
+
+</body>
+</html>

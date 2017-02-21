@@ -42,6 +42,10 @@
         <tr>
             <td><a href="index.html">Tagasi</a></td>
         </tr>
+        <tr>
+            <td></td>
+            <td><?php echo $errorMessage; ?></td>
+        </tr>
     </table>
 
 </form>
