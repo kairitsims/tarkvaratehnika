@@ -11,11 +11,19 @@ define('app',['exports'], function (exports) {
     }
   }
 
-  var App = exports.App = function App() {
-    _classCallCheck(this, App);
+  var App = exports.App = function () {
+    function App() {
+      _classCallCheck(this, App);
+    }
 
-    this.message = 'Tere';
-  };
+    App.prototype.configureRouter = function configureRouter(config, router) {
+      this.router = router;
+      config.title = 'Fitt 123';
+      config.map([{ route: ['', 'home'], name: 'home', moduleId: 'home/index' }, { route: 'exercise', name: 'exercise', moduleId: 'exercise', nav: true }]);
+    };
+
+    return App;
+  }();
 });
 define('environment',["exports"], function (exports) {
   "use strict";
@@ -75,5 +83,26 @@ define('resources/index',["exports"], function (exports) {
   exports.configure = configure;
   function configure(config) {}
 });
-define('text!app.html', ['module'], function(module) { module.exports = "<template>\n  <h1>${message}</h1>\n</template>\n"; });
+define('exercise',["exports"], function (exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var exercise = exports.exercise = function exercise() {
+        _classCallCheck(this, exercise);
+
+        this.appName = "Fitt";
+        this.count = 9;
+    };
+});
+define('text!app.html', ['module'], function(module) { module.exports = "<template>\n<router-view></router-view>\n</template>\n"; });
+define('text!exercise.html', ['module'], function(module) { module.exports = "<template>\r\n  <h1>${appName} ja ${count}</h1>\r\n</template>\r\n"; });
 //# sourceMappingURL=app-bundle.js.map
