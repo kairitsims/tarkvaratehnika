@@ -31,8 +31,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	runtime('org.springframework.boot:spring-boot-devtools')
-	runtime('com.h2database:h2')
-	//compile('org.mariadb.jdbc:mariadb-java-client:1.5.7')
+	//runtime('com.h2database:h2')
+	compile('org.mariadb.jdbc:mariadb-java-client:1.5.4')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

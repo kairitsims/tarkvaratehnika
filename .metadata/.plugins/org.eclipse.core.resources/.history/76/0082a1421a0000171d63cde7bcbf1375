@@ -1,0 +1,9 @@
+spring:
+  datasource:
+      url: jdbc:mariadb://localhost:8080/dbtest
+      username: root
+      password: random
+     jpa:
+      hibernate:
+        ddl-auto: update
+      
