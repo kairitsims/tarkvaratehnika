@@ -1,0 +1,8 @@
+spring:
+   datasource:
+      url: jdbc:mariadb://localhost/fitt
+      username: root
+      password: root
+   jpa: 
+      hibernate:
+         ddl-auto: update
