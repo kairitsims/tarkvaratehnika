@@ -1,23 +1,15 @@
 <template>
 
     <div class="main">
-     <img src.bind="p.data.Fitt_logo.jpg" />
-     <form>
-        <table class=tableStyle>
-            <tr>
-                <td>Kasutajanimi: </td>
-                <td><input type="text" name="username" autocomplete="off"></td>
-            </tr>
-            <tr>
-                <td>Parool:</td>
-                <td><input type="password" name="password" autocomplete="off"></td>
-            </tr>
-
-        </table>
-
-        <a href="main.html" class="button">Logi sisse</a>
-        <a href="signup.html" class="button">Loo konto</a>
-    </form>
+     <img src="Fitt_logo.jpg" />
+    
+       <form id="userform" submit.delegate="logiSisse()">
+                <div><label for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
+                <div><label for="password">Parool</label><input id="password" type="text" name="password" value.bind="userData.password"></div>
+                <input type="submit" name="Logi sisse">
+            </form>
+         <div class="button" route-href="route: Signup;">Loo konto</div>
+         
     </div>
     
 </template>

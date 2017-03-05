@@ -16,5 +16,6 @@ public class User {
 	long id;
 	String username;
 	String password;
-	int age;
+	String email;
+	String name;
 }

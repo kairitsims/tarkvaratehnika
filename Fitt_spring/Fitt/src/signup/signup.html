@@ -1,48 +1,13 @@
 <template>
-    <h1>${appName} ja ${count}</h1>
-    
-    <form id="userform" submit.delegate="addUser()">
-		<div><label for="firstName">First name</label><input id="firstName" type="text" name="firstName" value.bind="userData.firstName"></div>
-		<div><label for="lastName">Last name</label><input id="lastName" type="text" name="lastName" value.bind="userData.lastName"></div>
-		<div><label for="numOfPets">Num of pets</label><input id="numOfPets" type="number" name="numOfPets" value.bind="userData.numOfPets"></div>
-		<input type="submit" name="Lisa kasutaja">
-	</form>
-    
     <div class="main">
-     <img src="Fitt_logo.jpg" width="250"/>
+        <img src="Fitt_logo.jpg" width="250"/>
 
-     <form>
-        <table class=tableStyle>
-            <tr>
-                <td>Kasutajanimi:</td>
-                <td><input type="text" name="username"></td>
-            </tr>
-            <tr>
-                <td>Ees- ja perekonnanimi:</td>
-                <td><input type="text" name="fullname"></td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><input type="text" name="email"></td>
-            </tr>
-            <tr>
-                <td>Parool:</td>
-                <td><input type="password" name="password"></td>
-            </tr>
-            <tr>
-                <td>Parooli kinnitamine:</td>
-                <td><input type="password" name="password2"></td>
-            </tr>
-            <tr>
-                <td>Registreeri kasutajaks:</td>
-                <td><input type="submit" name="submitButton"></td>
-                <!--<td><a href="index.html" class="button">Registreeri</a></td>-->
-            </tr>
-            <tr>
-                <td><a href="index.html">Tagasi</a></td>
-            </tr>
-        </table>
-
-    </form>
+            <form id="userform" submit.delegate="addUser()">
+                <div><label for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
+                <div><label for="name">Nimi</label><input id="name" type="text" name="name" value.bind="userData.name"></div>
+                <div><label for="email">Email</label><input id="email" type="text" name="email" value.bind="userData.email"></div>
+                <div><label for="password">Parool</label><input id="password" type="text" name="password" value.bind="userData.password"></div>
+                <input type="submit" name="Lisa kasutaja">
+            </form>
     </div>
 </template>
