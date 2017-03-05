@@ -14,7 +14,7 @@ public class User {
 	@Id
 	@GeneratedValue
 	long id;
-	String firstName;
-	String lastName;
-	int numOfPets;
+	String username;
+	String password;
+	int age;
 }

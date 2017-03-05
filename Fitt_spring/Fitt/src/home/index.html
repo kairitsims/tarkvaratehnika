@@ -1,25 +1,23 @@
 <template>
 
     <div class="main">
- <img src="Fitt_logo.jpg" width="250"/>
- <img src.bind="p.data.Fitt_logo.jpg" />
- <form>
-    <table class=tableStyle>
-        <tr>
-            <td>Kasutajanimi: </td>
-            <td><input type="text" name="username" autocomplete="off"></td>
-        </tr>
-        <tr>
-            <td>Parool:</td>
-            <td><input type="password" name="password" autocomplete="off"></td>
-        </tr>
+     <img src.bind="p.data.Fitt_logo.jpg" />
+     <form>
+        <table class=tableStyle>
+            <tr>
+                <td>Kasutajanimi: </td>
+                <td><input type="text" name="username" autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td>Parool:</td>
+                <td><input type="password" name="password" autocomplete="off"></td>
+            </tr>
 
-    </table>
-    
-    <a href="main.html" class="button">Logi sisse</a>
-    <a href="signup.html" class="button">Loo konto</a>
-    <button click.trigger="a.setRoot('signup')">Loo konto</button>
-</form>
-</div>
+        </table>
+
+        <a href="main.html" class="button">Logi sisse</a>
+        <a href="signup.html" class="button">Loo konto</a>
+    </form>
+    </div>
     
 </template>
