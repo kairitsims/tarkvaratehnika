@@ -3,7 +3,7 @@
     <div class="main">
         <img src="src/images/logo.jpg">
     
-        <form id="userform" submit.delegate="getUser(userData.username)">
+        <form id="userform" submit.delegate="getUser(userData.username, userData.password)">
             <div><label for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
             <div><label for="password">Parool</label><input id="password" type="password" name="password" value.bind="userData.password"></div>
             <input type="submit" name="Logi sisse">

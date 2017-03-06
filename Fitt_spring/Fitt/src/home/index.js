@@ -11,20 +11,22 @@ export class Home{
         
         client.fetch('http://localhost:8080/users')
             .then(response => response.json())
-            .then(users => this.userList = users).then()
+            .then(users => this.userList = users);
         
     
     }
     
 
-    getUser(x){
+    getUser(x, y){
         console.log(x)
+        console.log(y)
+        
         let client = new HttpClient();
         
         client.fetch('http://localhost:8080/users/'+ x)
             .then(response => response.json())
-            .then(data => console.log("Server saatis " + data.username));
-        //console.log(vastus);
+            .then(data => this.vastus = data.password);
+        
         
     }
 }
