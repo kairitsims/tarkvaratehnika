@@ -3,12 +3,12 @@
     <div class="main">
         <img src="src/images/logo.jpg">
     
-        <form id="userform" submit.delegate="getUser(userData.username, userData.password)">
+        <form id="userform" submit.delegate="askUser(userData.username, userData.password)">
             <div><label for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
             <div><label for="password">Parool</label><input id="password" type="password" name="password" value.bind="userData.password"></div>
             <input type="submit" name="Logi sisse">
         </form>
-        <a href="../signup/signup.html" route-href="route: signup;">Loo konto</a>
+        <a href="../signup/signup.html" route-href="route: signup;" >Loo konto</a>
     </div>
     
 </template>

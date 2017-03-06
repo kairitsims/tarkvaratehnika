@@ -7,6 +7,7 @@ configureRouter(config, router) {
       { route: ['', 'home'], name: 'home', moduleId: 'home/index', title:"Esileht", nav: true },
       { route: 'signup', name: 'signup', moduleId: 'signup/signup', title:"Signup", nav: true },
       { route: 'main', name: 'main', moduleId: 'main/main', title:"Pealeht", nav: true },
+      { route: 'exercises', name: 'exercises', moduleId: 'exercises/exercises', title:"Exercises", nav: true },
     ]);
   }
 }
