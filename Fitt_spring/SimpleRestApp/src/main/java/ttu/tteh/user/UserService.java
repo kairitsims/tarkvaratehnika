@@ -22,7 +22,7 @@ public class UserService {
 		return userRepository.findAll();
 	}
 
-	User getUserByUsername(long username) {
+	User getUserByUsername(String username) {
 		return userRepository.findOne(username);
 	}
 }

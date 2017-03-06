@@ -13,9 +13,8 @@ export class signup{
         })
             .then(response => response.json())
             .then(data => {
-                console.log("Server saatis " + data.name);
+                console.log("Server saatis " + data.username);
         });
-        console.log("Method executed!")
         
     }
 }

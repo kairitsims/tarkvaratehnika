@@ -1,13 +1,14 @@
 <template>
     <div class="main">
-        <img src="Fitt_logo.jpg" width="250"/>
+        <img src="src/images/logo.jpg">
 
             <form id="userform" submit.delegate="addUser()">
                 <div><label for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
                 <div><label for="name">Nimi</label><input id="name" type="text" name="name" value.bind="userData.name"></div>
                 <div><label for="email">Email</label><input id="email" type="text" name="email" value.bind="userData.email"></div>
-                <div><label for="password">Parool</label><input id="password" type="text" name="password" value.bind="userData.password"></div>
+                <div><label for="password">Parool</label><input id="password" type="password" name="password" value.bind="userData.password"></div>
                 <input type="submit" name="Lisa kasutaja">
+                <a href="../home/index.html" route-href="route: home;">Tagasi</a>
             </form>
     </div>
 </template>

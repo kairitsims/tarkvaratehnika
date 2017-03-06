@@ -1,15 +1,14 @@
 <template>
 
     <div class="main">
-     <img src="Fitt_logo.jpg" />
+        <img src="src/images/logo.jpg">
     
-       <form id="userform" submit.delegate="logiSisse()">
-                <div><label for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
-                <div><label for="password">Parool</label><input id="password" type="text" name="password" value.bind="userData.password"></div>
-                <input type="submit" name="Logi sisse">
-            </form>
-         <div class="button" route-href="route: Signup;">Loo konto</div>
-         
+        <form id="userform" submit.delegate="getUser(userData.username)">
+            <div><label for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
+            <div><label for="password">Parool</label><input id="password" type="password" name="password" value.bind="userData.password"></div>
+            <input type="submit" name="Logi sisse">
+        </form>
+        <a href="../signup/signup.html" route-href="route: signup;">Loo konto</a>
     </div>
     
 </template>
