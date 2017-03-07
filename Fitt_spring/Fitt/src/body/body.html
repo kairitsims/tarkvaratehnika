@@ -2,8 +2,10 @@
     <h1>Keha</h1>
     <div repeat.for="exercise of exerciseList">
     <h2>${exercise.name}</h2>
-    <img src="${exercise.asukoht}">
+    <img class="harjutusepilt" src="${exercise.asukoht}">
     <p>${exercise.arv}</p>
     <p>${exercise.kirjeldus}</p>
     </div>
+        <a class="nupp2" href="../main/main.html" route-href="route: main;" >Tagasi</a>
+
 </template>
