@@ -1,6 +1,8 @@
+import {HttpClient, json} from 'aurelia-fetch-client'
 export class Home{
     
-    constructor() {
-        this.message = "Hello!"
+    
+    showExercises(){
+        console.log("asfi");
     }
 }
