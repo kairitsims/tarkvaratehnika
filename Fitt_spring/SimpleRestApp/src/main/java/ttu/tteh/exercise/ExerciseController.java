@@ -22,8 +22,8 @@ public class ExerciseController {
 		return exerciseService.getAllExercises();
 	}
 	
-	//@RequestMapping(value = "/exercise/{liik}", method=RequestMethod.GET)
-	//public List<Exercise> getExercise(@PathVariable("liik") String liik) {
-	//	return exerciseService.getExerciseByLiik(liik);
-	//}
+	@RequestMapping(value = "/exercise/{liik}", method=RequestMethod.GET)
+	public List<Exercise> getExercise(@PathVariable("liik") String liik) {
+		return exerciseService.getExerciseByLiik(liik);
+	}
 }
