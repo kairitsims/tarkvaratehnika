@@ -17,7 +17,7 @@ public class ExerciseService {
 		return exerciseRepository.findAll();
 	}
 	
-	//Exercise getExerciseByLiik(String liik) {
-		//return exerciseRepository.findAll(liik);
-	//}
+	Exercise getExerciseByLiik(String liik) {
+		return exerciseRepository.findAll(liik);
+	}
 }

@@ -29,7 +29,17 @@ export class Home{
         
         client.fetch('http://localhost:8080/users/'+ x)
             .then(response => response.json())
-            .then(data => console.log(JSON.stringify(data.password) === '"'+y+'"'))
+            .then(data => {
+                //console.log(JSON.stringify(data.password) === '"'+y+'"');
+                if(JSON.stringify(data.password) === '"'+y+'"'){
+                    console.log("Korras")
+                    var landingUrl = "http://" + window.location.host + "#/main";
+                    window.location.href = landingUrl
+                }else{
+                    console.log("Vale password")
+                    alert("Vale salasõna! Proovige uuesti")
+                }
+            })
             
         }   //see tahastab konsooli true või false, works
         

@@ -1,8 +1,14 @@
 import {HttpClient, json} from 'aurelia-fetch-client'
-export class Home{
+
+export class main{
+
+    userData = {}
     
-    
-    showExercises(){
-        console.log("asfi");
+    goToPage(pageName){
+        console.log("Server saatis" + pageName);
+        var landingUrl = "http://" + window.location.host + "#/" + pageName;
+        window.location.href = landingUrl;
+        //window.location.href="../exercises/exercises.html" route:"route: signup;";
+        
     }
 }
