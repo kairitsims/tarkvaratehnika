@@ -1,8 +1,8 @@
 <template>
     <div class="main">
-        <img src="src/images/logo.jpg">
+        <img class=logo src="src/images/logo.jpg">
 
-            <form id="userform" submit.delegate="addUser()">
+            <form submit.delegate="addUser()">
                 <div><label for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
                 <div><label for="name">Nimi</label><input id="name" type="text" name="name" value.bind="userData.name"></div>
                 <div><label for="email">Email</label><input id="email" type="text" name="email" value.bind="userData.email"></div>

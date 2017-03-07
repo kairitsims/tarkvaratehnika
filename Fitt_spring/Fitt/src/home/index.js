@@ -58,16 +58,6 @@ export class Home{
         //console.log(JSON.stringify(this.vastus));
         
 
-    askUser(x, y){
-        console.log(x)
-        console.log(y)
-        
-        if (this.getUser(x, y) === true){
-            console.log("abc")
-        }else{
-            console.log("xxx")
-        }
-    }
 
 
 }

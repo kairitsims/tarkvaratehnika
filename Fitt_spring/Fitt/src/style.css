@@ -85,27 +85,16 @@ button{
 	float: left;
 }
 
-.downcol{
-	height: 225px;
-	width: 692px;
+img{
+	width: 150px;
+	height: 105px;
+}
+
+#userform{ /*selleks, et main lehel oleks formid ilusti*/
 	float: left;
 }
 
-
-.maincol{
-	width: 1000px;
-    height: 500px;
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
-    padding-top: 10px;
-}
-
-img{
+.logo{ /*selleks, et signup ja index lehel oleks logo suur*/
 	width: 225px;
 	height: 225px;
-}
-
-.logo{
-	margin-right: 50px;
 }
