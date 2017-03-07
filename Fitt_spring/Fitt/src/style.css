@@ -115,6 +115,11 @@ img{
 	margin-left: 53px;
 }
 
+.logo2{
+	width: 225px;
+	height: 225px;
+}
+
 .lahter{
 	width: 500px;
 	height: 30px;
@@ -126,17 +131,21 @@ img{
 }
 
 .parool{
-	margin: 31px;
+	margin: 32px;
 }
 
 .nimi{
-	margin: 39px;
+	margin: 40px;
 }
 
 .email{
-	margin: 34px;
+	margin: 35px;
 }
 
+.harjutusepilt{
+	width: 225px;
+	height: 225px;
+}
 
 .nupp{
 	width: 100px;
