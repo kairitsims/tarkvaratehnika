@@ -4,9 +4,9 @@ configureRouter(config, router) {
     this.router = router;
     config.title = 'Fitt';
     config.map([
-      { route: ['', 'home'], name: 'home', moduleId: 'home/index', title:"Esileht", nav: true },
-      { route: 'signup', name: 'signup', moduleId: 'signup/signup', title:"Signup", nav: true },
-      { route: 'main', name: 'main', moduleId: 'main/main', title:"Pealeht", nav: true },
+      { route: ['', 'home'], name: 'home', moduleId: 'home/index', title:"Esileht", nav: false },
+      { route: 'signup', name: 'signup', moduleId: 'signup/signup', title:"Signup", nav: false },
+      { route: 'main', name: 'main', moduleId: 'main/main', title:"Pealeht", nav: false },
       { route: 'soojendus', name: 'soojendus', moduleId: 'soojendus/soojendus', title:"Soojendus", nav: false },
       { route: 'arms', name: 'arms', moduleId: 'arms/arms', title:"Käed", nav: false },
       { route: 'abs', name: 'abs', moduleId: 'abs/abs', title:"Kõht", nav: false },

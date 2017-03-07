@@ -1,6 +1,8 @@
 <template>
-    <div>
+    <div class="suur">
+        <img class=logo src="src/images/logo.jpg">
         <div class="mencol">
+            
     			<ul class="menu">
         			<li><a href="addTraining.html">Lisa treening</a></li>
         			<li><a href="history.html">Tehtud treeningute ajalugu</a></li>
@@ -9,36 +11,26 @@
         			<li><a href="weight.html">Kaal</a></li>
         			<li><a href="index.html">Logi välja</a></li>
     			</ul>
-        </div>
+            </div>
 		<div>
             <form id="userform" submit.delegate="goToPage('soojendus')">
                 <img src="src/images/butt.jpg">
-                <input type="submit" name="abs">
-            </form>
-            
-            <form id="userform" submit.delegate="goToPage('arms')">
+                <input type="submit" value="Vali">
+            </form><form id="userform" submit.delegate="goToPage('arms')">
                 <img src="src/images/arm.jpg">
-                <input type="submit">
-            </form>
-            
-            <form id="userform" submit.delegate="goToPage('streches')">
-                <img src="src/images/back.jpg">
-                <input type="submit">
-            </form>
-
-            <form id="userform" submit.delegate="goToPage('legs')">
+                <input type="submit" value="Vali">
+            </form><form id="userform" submit.delegate="goToPage('legs')">
                 <img src="src/images/leg.jpg">
-                <input type="submit">
-            </form>
-            
-            <form id="userform" submit.delegate="goToPage('abs')">
+                <input type="submit" value="Vali">
+            </form><form id="userform" submit.delegate="goToPage('abs')">
                 <img src="src/images/abs.jpg">
-                <input type="submit">
-            </form>
-            
-            <form id="userform" submit.delegate="goToPage('body')">
+                <input type="submit" value="Vali">
+            </form><form id="userform" submit.delegate="goToPage('body')">
                 <img src="src/images/fullbody.jpg">
-                <input type="submit">
+                <input type="submit" value="Vali">
+            </form><form id="userform" submit.delegate="goToPage('streches')">
+                <img src="src/images/back.jpg">
+                <input type="submit" value="Vali">
             </form>
 		</div>
     </div>

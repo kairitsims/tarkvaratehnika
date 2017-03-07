@@ -79,22 +79,77 @@ button{
 	
 }
 .mencol{
-	height: 225px;
-	width: 225px;
-	padding-left: 44px;
+	height: 230px;
+	width: 727px;
 	float: left;
+	padding-right: 200px;	
 }
 
+a{
+	height: 19.5px;
+}
+
+.suur{
+	float: left;
+}
 img{
 	width: 150px;
-	height: 105px;
+	height: 150px;
+	
 }
 
-#userform{ /*selleks, et main lehel oleks formid ilusti*/
+#userform{
+	width: 300px;
+	margin: none;
+	padding-right: 100px;
+	padding-top: 20px;
 	float: left;
 }
+
+
 
 .logo{ /*selleks, et signup ja index lehel oleks logo suur*/
 	width: 225px;
 	height: 225px;
+	float: left;
+	margin-left: 53px;
+}
+
+.lahter{
+	width: 500px;
+	height: 30px;
+	float: center;
+}
+
+.kasutaja{
+	margin: 10px;
+}
+
+.parool{
+	margin: 31px;
+}
+
+.nimi{
+	margin: 39px;
+}
+
+.email{
+	margin: 34px;
+}
+
+
+.nupp{
+	width: 100px;
+	height: 30px;
+	background-color: #efefef;
+	border: none;
+	
+}
+
+.nupp2{
+	width: 100px;
+	height: 30px;
+	text-decoration:none;
+	border: none;
+	margin: 30px;
 }

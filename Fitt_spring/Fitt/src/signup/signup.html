@@ -3,12 +3,12 @@
         <img class=logo src="src/images/logo.jpg">
 
             <form submit.delegate="addUser()">
-                <div><label for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
-                <div><label for="name">Nimi</label><input id="name" type="text" name="name" value.bind="userData.name"></div>
-                <div><label for="email">Email</label><input id="email" type="text" name="email" value.bind="userData.email"></div>
-                <div><label for="password">Parool</label><input id="password" type="password" name="password" value.bind="userData.password"></div>
-                <input type="submit" name="Lisa kasutaja">
-                <a href="../home/index.html" route-href="route: home;">Tagasi</a>
+                <div class="lahter"><label class="kasutaja" for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
+                <div class="lahter"><label class="nimi" for="name">Nimi</label><input id="name" type="text" name="name" value.bind="userData.name"></div>
+                <div class="lahter"><label class="email" for="email">Email</label><input id="email" type="text" name="email" value.bind="userData.email"></div>
+                <div class="lahter"><label class="parool" for="password">Parool</label><input id="password" type="password" name="password" value.bind="userData.password"></div>
+                <input class="nupp" type="submit" name="Lisa kasutaja">
+                <a class="nupp2" href="../home/index.html" route-href="route: home;">Tagasi</a>
             </form>
     </div>
 </template>
