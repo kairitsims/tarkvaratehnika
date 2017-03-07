@@ -1,0 +1,9 @@
+<template>
+    <h1>Käed</h1>
+    <div repeat.for="exercise of exerciseList">
+    <h2>${exercise.name}</h2>
+    <img src="${exercise.asukoht}">
+    <p>${exercise.arv}</p>
+    <p>${exercise.kirjeldus}</p>
+    </div>
+</template>

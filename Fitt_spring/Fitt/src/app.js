@@ -7,12 +7,12 @@ configureRouter(config, router) {
       { route: ['', 'home'], name: 'home', moduleId: 'home/index', title:"Esileht", nav: true },
       { route: 'signup', name: 'signup', moduleId: 'signup/signup', title:"Signup", nav: true },
       { route: 'main', name: 'main', moduleId: 'main/main', title:"Pealeht", nav: true },
-      { route: 'soojendus', name: 'soojendus', moduleId: 'exercises/soojendus', title:"Soojendus", nav: false },
-      { route: 'arm', name: 'arm', moduleId: 'arm/arm', title:"Jalad", nav: true },
-      { route: 'kõht', name: 'kõht', moduleId: 'exercises/kõht', title:"Kõht", nav: false },
-      { route: 'keha', name: 'keha', moduleId: 'exercises/keha', title:"Keha", nav: false },
-      { route: 'selg', name: 'selg', moduleId: 'exercises/selg', title:"Selg", nav: false },
-      { route: 'venitus', name: 'venitus', moduleId: 'exercises/venitus', title:"Vanitus", nav: false },
+      { route: 'soojendus', name: 'soojendus', moduleId: 'soojendus/soojendus', title:"Soojendus", nav: false },
+      { route: 'arms', name: 'arms', moduleId: 'arms/arms', title:"Käed", nav: false },
+      { route: 'abs', name: 'abs', moduleId: 'abs/abs', title:"Kõht", nav: false },
+      { route: 'body', name: 'body', moduleId: 'body/body', title:"Keha", nav: false },
+      { route: 'legs', name: 'legs', moduleId: 'legs/legs', title:"Jalad", nav: false },
+      { route: 'streches', name: 'streches', moduleId: 'streches/streches', title:"Venitus", nav: false },
     ]);
   }
 }
