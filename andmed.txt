@@ -1,0 +1,62 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               10.1.21-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win64
+-- HeidiSQL Version:             9.4.0.5125
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Dumping data for table fitt.exercise: ~41 rows (approximately)
+/*!40000 ALTER TABLE `exercise` DISABLE KEYS */;
+INSERT INTO `exercise` (`name`, `arv`, `asukoht`, `kirjeldus`, `liik`, `yhik`) VALUES
+	('"Ussi" harjutus', 10, NULL, 'Toeta käed enda ette maha ning kõnni kätega kuni su keha on sirge. Peale seda liigu kätega tagurpidi püsti asendisse tagasi.', 'arms', 'korda'),
+	('Edasiarendusega kõhulihased', 6, NULL, 'Lama selili. Tõsta jajalad ning käed üles. Tõsta keha kõhulihastega ülespoole.', 'abs', 'korda'),
+	('Hantli harjutus', 15, NULL, 'Seisa poolkükis. Kummardu kehaga ette.Lase käed vabalt alla ning tõsta neid kehaga ühele tasandile.Võib võtta lisaraskused kätte, kui ilma jääb harjutus liiga kergeks.', 'body', 'korda'),
+	('Harki hüpped', 10, NULL, 'Alusta jalad koos. Hüppa jalad harki ning seejärel soorita kükk. Peale seda hüppa jalad kokku tagasi.', 'legs', 'korda'),
+	('Jalalt jalale hüpped', 10, NULL, 'Hüppa ühelt jalalt teisele ning soorita kükk jalale toetudes.', 'legs', 'korda'),
+	('Kaela lihaste soojendus', 12, NULL, 'Seisa püsti ning soorita pea ringe. Algul ühele poole 6 ja seejärel teisele poole 6.', 'soojendus', 'korda'),
+	('Keha soojendus', 8, NULL, 'Mine käpukile. Siruta pea üles nign samal ajal vii keha alla.Seejärel vii pea alla ning suru keha üles.', 'soojendus', 'korda'),
+	('Kehatõsted', 10, NULL, 'Toeta õlad tooli/diivani peale. Tõsta puusad nii kõrgele kui suudad ning seejärel lasku aeglaselt tagasi algsesse asendisse.', 'body', 'korda'),
+	('Kogu seljapiirkonna harjutus', 20, NULL, 'Mine käpuli. Käed ja jalad peavad olema diagonaalselt vastavalt õlgade ja puusadega. Suru selg üles.', 'streches', 'korda'),
+	('Kõrvale asted', 20, NULL, 'Tuleb sooritada kükke paremale ja vasakule astudes.', 'legs', 'korda'),
+	('Kätekõverdused', 8, NULL, 'Hoia käsi õlgade laiuselt ning kõverda käsi kuniks nina puudutab maapinda.', 'arms', 'korda'),
+	('Kätele toetudes kõrvale kõnd', 10, NULL, 'Võta tavaline kõtekõverduste asend. Liigu käte ja jalgade abil 4 sammu paremale ja seejärel samamoodi tagasi.', 'arms', 'korda'),
+	('Käteringid', 10, NULL, 'Seisa püsti. Siruta käed välja ning soorita käte ringe.', 'soojendus', 'korda'),
+	('Külgmiste kõhulihaste harjutus', 10, NULL, 'Toetu kätele. Kõverda põlv enda alla ning liiguta seda paremale ja vasakule. Soorita harjutust mõlema jalaga.', 'abs', 'korda'),
+	('Külgmiste seljalihaste harjutus', 10, NULL, 'Mine külili. Toetu küünarnukile. Liiguta keha maa poole ning harjutuse lõpetuseks vii vaba käsi keha alla. Korda harjutust ka teisele küljele toetudes.', 'body', 'korda'),
+	('Madal keha sirutus', 10, NULL, 'Võta kolmnurkne asend, toetudes kätele. Vii keha painutusega maalähedalt ette.', 'body', 'korda'),
+	('Näpud püsti superman', 8, NULL, 'Lama kõhuli. Hoia jalad ning käed sirgelt. Tõsta keha ja jalad maast õhku.', 'body', 'korda'),
+	('Painutus', 15, NULL, 'Seisa jalad harkis. Vii keharaskus ühele jalale ning siruta käed ette.', 'body', 'korda'),
+	('Pealmise reielihase venitus', 25, NULL, 'Seisa püstises asendis. Võta käega kõverdatud jalast kinni ning tõmba kätt ülespoole.', 'streches', 'korda'),
+	('Poolkükid', 15, NULL, 'Hoia jalad harkis ning pöiad peavad olema välja pööratud', 'legs', 'korda'),
+	('Puusaringid', 10, NULL, 'Seisa püsti. Võta kätega puusadest kinni ning soorita keha ringe.', 'soojendus', 'korda'),
+	('Põlvetõstejooks kätele toetudes', 10, NULL, 'Toeta käed maha õlgade laiuselt. Soorita mõlema põlvega 3 tõstet ning seejärel hüppa õhku.', 'abs', 'korda'),
+	('Pöiaringid', 10, NULL, 'Tõsta üks jalg maast õhku ning soorita pöia ringe. Korda tegevust teise jalaga.', 'soojendus', 'korda'),
+	('Raskem kõhulihaste harjutus', 7, NULL, 'Mine istukile. Tõsta jalad maast õhku. Tõmba jalad kõverdatult oma keha vastu ning astu mõlema jalaga õhus samm.', 'abs', 'korda'),
+	('Rinnakorvi ja käelihaseid venitav harjutus', 25, NULL, 'Seisa sirgelt ja rista sõrmed selja taga ning vii käed üles', 'streches', 'korda'),
+	('Selja soojendus', 15, NULL, 'Lama selili jalad kõverdatult. Puuduta sõrmedega kordamööda kandasid', 'soojendus', 'korda'),
+	('Selja venitus', 20, NULL, 'Lama kõhuli. Tõsta kätega ülakeha üles ja hoia asendit.', 'streches', 'korda'),
+	('Seljalihaste harjutus', 15, NULL, 'Seisa poolkükis. Siruta käed välja ning liiguta neid aeglaselt ühele ja teisele poole.', 'body', 'korda'),
+	('Sisemise reielihase harjutus', 10, NULL, 'Lama külili ning tõsta oma alumist jalga. Treenitav jalg peab olema sirge. Teine jalg on tasakaalu hoidmiseks.', 'legs', 'korda'),
+	('Sugavad kükid', 15, NULL, 'Hoia jalad harki ning soorita sügavaid kükke.', 'legs', 'korda'),
+	('Superman', 8, NULL, 'Toetu kätele. Siruta üks käsi sirgelt ette ning vii see käsi vastas jala juurde. Korda tegevust teise käega.', 'abs', 'korda'),
+	('Tagumise reielihase venitus', 20, NULL, 'Mine selili. Tõsta jalg sirgelt üles ning tõmba seda kätega keha poole.', 'streches', 'korda'),
+	('Teemant kätekõverdused', 6, NULL, 'Võta kätekõverduste asend. Pane käed kokku nii, et sõrmede vahele tekiks teemandi kuju. Seejärel soorita kõverdused.', 'arms', 'korda'),
+	('Toenglamangusse minek', 10, NULL, 'Võta harilik kätekõeverduste tegemise asend. Toestu küünarnukkidele. Tee seda üks käsi korraga.', 'arms', 'korda'),
+	('Triitsepsi kätekõverdused', 20, NULL, 'Võta suvaline maast 40cm kõrgune ese oma selja taha ning toeta käed sellele. Jalad siruta välja ning soorita kätekõverdusi.', 'arms', 'korda'),
+	('Triitsepsi venitus', 20, NULL, 'Nõjatu seinale või seisa püsti. Tõsta seinapoolne käsi ja võta vastaskäega küünarnukist kinni. Tõmba kätt tahapoole.', 'streches', 'korda'),
+	('Tugevad kõhulihased', 10, NULL, 'Lama selili. Siruta mõlemad käed ning kõverda põlves üks jalg toeks. Tõsta sirutatud käed ja jalg üles kokku  ning teisel tõstmisel tõsta puusad maast õhku.', 'abs', 'korda'),
+	('Tuhara harjutus', 15, NULL, 'Lama selili, tõsta üks jalg sirgelt üles(pöid peab olema välja sirutatud) ning tõsta oma keha maast üles.', 'legs', 'korda'),
+	('Tuhara ja reie venitus', 25, NULL, 'Mine selili pane üks jalg risti üle teise põlve ning tõmba kätega jalad keha vastu.', 'streches', 'korda'),
+	('Tuhara venitus', 20, NULL, 'Mine selili. Võta kätega põlvede ümbert kinni ning tõmba jalad kõverdatult kõhu vastu.', 'streches', 'korda'),
+	('Välimise reiellihase harjutus', 10, NULL, 'Lama külili ning tõsta oma ülemist jalga.Jalg peab olema sirge.', 'legs', 'korda');
+/*!40000 ALTER TABLE `exercise` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
