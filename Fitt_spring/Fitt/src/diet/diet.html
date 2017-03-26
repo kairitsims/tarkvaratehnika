@@ -1,0 +1,13 @@
+<template>
+    <div>
+        <h1>Toitumispäevik</h1>
+    </div>
+    
+    <form submit.delegate="addUser()">
+        <div class="lahter"><label class="kasutaja" for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
+        <div class="lahter"><label class="foodName" for="foodName">Toit</label><input id="foodName" type="text" name="foodName" value.bind="userData.foodName"></div>
+        <div class="lahter"><label class="foodAmount" for="foodAmount">Kogus</label><input id="foodAmount" type="text" name="foodAmount" value.bind="userData.foodAmount"></div>
+        <input class="nupp" type="submit" name="Lisa toitumine">
+        <a class="nupp2" href="../main/main.html" route-href="route: main;">Tagasi</a>
+    </form>
+</template>
