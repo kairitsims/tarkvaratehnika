@@ -1,13 +1,26 @@
 <template>
-    <div>
-        <h1>Toitumispäevik</h1>
-    </div>
     
-    <form submit.delegate="addUser()">
-        <div class="lahter"><label class="kasutaja" for="username">Kasutajanimi</label><input id="username" type="text" name="username" value.bind="userData.username"></div>
-        <div class="lahter"><label class="foodName" for="foodName">Toit</label><input id="foodName" type="text" name="foodName" value.bind="userData.foodName"></div>
-        <div class="lahter"><label class="foodAmount" for="foodAmount">Kogus</label><input id="foodAmount" type="text" name="foodAmount" value.bind="userData.foodAmount"></div>
-        <input class="nupp" type="submit" name="Lisa toitumine">
-        <a class="nupp2" href="../main/main.html" route-href="route: main;">Tagasi</a>
+    <div class="diet">
+        <h1>Toitumispäevik</h1>
+        <form submit.delegate="addDiet()">
+        <table class="diettable">
+          <tr>
+            <td><label class="kasutaja" for="username">Kasutajanimi</label></td>
+            <td><input id="username" type="text" name="username" value.bind="userData.username"></td> 
+          </tr>
+          <tr>
+            <td><label class="foodName" for="foodName">Toit</label></td>
+            <td><input id="foodName" type="text" name="foodName" value.bind="userData.foodName"></td> 
+          </tr>
+          <tr>
+            <td><label class="foodAmount" for="foodAmount">Kogus</label></td>
+            <td><input id="foodAmount" type="text" name="foodAmount" value.bind="userData.foodAmount"></td> 
+          </tr>
+          <tr>
+            <td><input class="nupp" type="submit" name="Lisa toitumine"></td>
+            <td><a class="nupp2" href="../main/main.html" route-href="route: main;">Tagasi</a></td> 
+          </tr>
+        </table>
     </form>
+    </div>
 </template>

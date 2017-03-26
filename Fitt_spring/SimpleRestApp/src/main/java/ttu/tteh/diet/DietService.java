@@ -21,10 +21,6 @@ public class DietService {
 	List<Diet> getAllDiets() {
 		return dietRepository.findAll();
 	}
-
-	Diet getDietByUsername(String username) {
-		return dietRepository.findOne(username);
-	}
 	
 	List<Diet> getDietByUsername(String username) {
 		return dietRepository.findByUsername(username);

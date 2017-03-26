@@ -162,3 +162,19 @@ img{
 	border: none;
 	margin: 30px;
 }
+
+.diet{
+	background: url('src/images/diet.jpg');
+	text-align: center;
+    width: 500px;
+    height: 400px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+.diettable{
+	margin-top: 75px;
+	margin-left: 100px;
+}

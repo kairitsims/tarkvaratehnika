@@ -14,9 +14,6 @@ export class diet{
             .then(data => {
                 console.log("Server saatis " + data.foodName);
         });
-        var landingUrl = "http://" + window.location.host + "";
-        window.location.href = landingUrl;
-        alert("Kasutajakonto on loodud! Logige sisse");
     }
 
     activate(){

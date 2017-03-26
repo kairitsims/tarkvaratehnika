@@ -29,7 +29,7 @@ public class DietController {
 	}
 	
 	@RequestMapping(value = "/diet/{username}", method=RequestMethod.GET)
-	public Diet getDiet(@PathVariable("username") String username) {
+	public List<Diet> getDiet(@PathVariable("username") String username) {
 		return dietService.getDietByUsername(username);
 	}
 }
