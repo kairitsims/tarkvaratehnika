@@ -21,4 +21,6 @@ export function configure(aurelia) {
   }
 
   aurelia.start().then(() => aurelia.setRoot());
+    
+    aurelia.use.plugin('aurelia-cookie');
 }
