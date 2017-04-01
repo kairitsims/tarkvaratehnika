@@ -2,8 +2,6 @@ import {HttpClient, json} from 'aurelia-fetch-client'
 
 export class diet{
     userData = {}
-    dietList=[]
-    
     
     addDiet(){
         let client = new HttpClient();
@@ -16,15 +14,16 @@ export class diet{
             .then(data => {
                 console.log("Server saatis " + data.foodName);
         });
-        document.getElementById("form").reset();
     }
 
     activate(){
+        
         let client = new HttpClient();
-        client.fetch('http://localhost:8080/diet')
+        
+        client.fetch("http://localhost:8080/diet/'username'")
             .then(response => response.json())
-            .then(diets => this.dietList = diets);
-    }
-    
+            .then(diets => this.dietsList = diets);
 
+        
+    }
 }

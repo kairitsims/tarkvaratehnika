@@ -1,8 +1,8 @@
 <template>
     
     <div class="diet">
-        <h1>Lisa uus</h1>
-        <form submit.delegate="addDiet()" id="form">
+        <h1>Toitumispäevik</h1>
+        <form submit.delegate="addDiet()">
         <table class="diettable">
           <tr>
             <td><label class="kasutaja" for="username">Kasutajanimi</label></td>
@@ -22,11 +22,5 @@
           </tr>
         </table>
     </form>
-    </div>
-    <div>
-        <h3>Toitumispäevik</h3>
-        <ul>
-            <li repeat.for="diet of dietList">${diet.foodName} ${diet.foodAmount}</li>
-        </ul>
     </div>
 </template>
