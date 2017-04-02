@@ -1,0 +1,26 @@
+<template>
+    
+    <div class="training">
+        <h1>Lisa uus</h1>
+        <form submit.delegate="addTraining()" id="form">
+        <table class="trainingtable">
+          <tr>
+            <td><label class="kasutaja" for="username">Kasutajanimi</label></td>
+            <td><input id="username" type="text" name="username" value.bind="trainingData.username"></td> 
+          </tr>
+          <tr>
+            <td><label class="trainingName" for="trainingName">Treening</label></td>
+            <td><input id="trainingName" type="text" name="trainingName" value.bind="trainingData.trainingName"></td> 
+          </tr>
+          <tr>
+            <td><label class="trainingLength" for="trainingLength">Kestvus</label></td>
+            <td><input id="trainingLength" type="text" name="trainingLength" value.bind="trainingData.trainingLength"></td> 
+          </tr>
+          <tr>
+            <td><input class="nupp" type="submit" name="Lisa treening"></td>
+            <td><a class="nupp2" href="../main/main.html" route-href="route: main;">Tagasi</a></td> 
+          </tr>
+        </table>
+    </form>
+    </div>
+</template>
