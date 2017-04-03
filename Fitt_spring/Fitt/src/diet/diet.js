@@ -1,7 +1,6 @@
 import {HttpClient, json} from 'aurelia-fetch-client'
-import {Cookie} from 'aurelia-cookie'
 
-export class Diet{
+export class diet{
     
     dietData = {}
     dietList=[]
@@ -23,8 +22,7 @@ export class Diet{
     }
 
     activate(){
-        var muutuja = Cookie.get(username);
-        console.log(muutuja);
+        
         let client = new HttpClient();
         
         client.fetch('http://localhost:8080/diet')

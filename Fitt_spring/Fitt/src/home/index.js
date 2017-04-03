@@ -1,19 +1,13 @@
 import {HttpClient, json} from 'aurelia-fetch-client'
-import {Cookie} from 'aurelia-cookie'
 
-export class User{
+export class Home{
+    userData = {}
+    userList= []
 
     getUser(x, y){
-        
-        
-        Cookie.set(username, "skskks", {
-            expiry: 1, // Expiry in hours, -1 for never expires or minimum 1 for one hour, 2 for two hours and so 
-            path: '', // Specify cookie path 
-            domain: '', // Domain restricted cookie 
-            secure: false // Either true or false 
-        });
         console.log(x)
-        console.log(y)    
+        console.log(y)
+        var val;    
     
         let client = new HttpClient();
         
@@ -29,6 +23,6 @@ export class User{
                     alert("Vale salasõna! Proovige uuesti")
                 }
             })
-    
-    } 
+            
+        } 
 }
