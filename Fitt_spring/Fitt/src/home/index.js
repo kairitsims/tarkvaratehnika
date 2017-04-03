@@ -1,4 +1,5 @@
 import {HttpClient, json} from 'aurelia-fetch-client'
+//import {Cookies} from 'aurelia-plugins-cookies'; COOKIED INSTALLITUD AGA ANNAB ERRORI
 
 export class Home{
     userData = {}
@@ -18,6 +19,7 @@ export class Home{
                     console.log("Korras")
                     var landingUrl = "http://" + window.location.host + "#/main";
                     window.location.href = landingUrl
+                    console.log(x + 'hei')
                 }else{
                     console.log("Vale password")
                     alert("Vale salasõna! Proovige uuesti")
