@@ -7,4 +7,16 @@
         <p>${exercise.kirjeldus}</p>
     </div>
     <a class="nupp2" href="../main/main.html" route-href="route: main;" >Tagasi</a>
+    <form submit.delegate="addTraining()" id="form">
+     <table class="trainingtable">
+          <tr>
+            <td><label class="trainingComments" for="trainingComments">Kommentaar</label>
+            </td>
+            <td><input id="trainingComments" type="text" name="trainingComments" value.bind="trainingData.trainingComments"></td> 
+          </tr>
+          <tr>
+            <td><input class="nupp" type="submit" name="Lisa treening"></td> 
+          </tr>
+        </table>
+        </form>
 </template>
