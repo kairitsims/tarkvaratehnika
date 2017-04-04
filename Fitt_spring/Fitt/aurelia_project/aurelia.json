@@ -132,7 +132,12 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
-          }
+          },
+            {
+            "name": "aurelia-cookie",
+            "path": "../node_modules/aurelia-cookie/dist/amd",
+            "main": "index"
+            }
         ]
       }
     ]
