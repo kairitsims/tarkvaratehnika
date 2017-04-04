@@ -8,6 +8,7 @@ configureRouter(config, router) {
       { route: 'signup', name: 'signup', moduleId: 'signup/signup', title:"Signup", nav: false },
       { route: 'main', name: 'main', moduleId: 'main/main', title:"Pealeht", nav: false },
       { route: 'diet', name: 'diet', moduleId: 'diet/diet', title:"Toitumine", nav: false },
+      { route: 'history', name: 'history', moduleId: 'history/history', title:"Treeningpäevik", nav: false },
       { route: 'training', name: 'training', moduleId: 'training/training', title:"Treening", nav: false },
       { route: 'soojendus', name: 'soojendus', moduleId: 'soojendus/soojendus', title:"Soojendus", nav: false },
       { route: 'arms', name: 'arms', moduleId: 'arms/arms', title:"Käed", nav: false },

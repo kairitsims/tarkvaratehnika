@@ -12,6 +12,9 @@ export class main{
     }
 
     activate(){
+        let aeg = new Date()
+        let aeg2 = aeg.getTime();
+        console.log(aeg2)
         console.log(AureliaCookie.get('username'));
     }
 }

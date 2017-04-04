@@ -1,0 +1,8 @@
+<template>
+    <div>
+        <h3>Treeningpäevik</h3>
+        <ul>
+            <li repeat.for="training of trainingList">${training.trainingName} ${training.trainingLength} ${training.trainingComments}</li>
+        </ul>
+    </div>
+</template>
