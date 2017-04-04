@@ -1,4 +1,5 @@
 import {HttpClient, json} from 'aurelia-fetch-client'
+import {Cookies} from 'aurelia-plugins-cookies'
 
 export class diet{
     
@@ -28,6 +29,8 @@ export class diet{
         client.fetch('http://localhost:8080/diet')
             .then(response => response.json())
             .then(diets => this.dietList = diets);
+    
+            //console.log(Cookies.get(username));
     }
    
 }
