@@ -1,8 +1,11 @@
 <template>
     <div>
         <h3>Treeningpäevik</h3>
+        <div class="HistoryScroll">
         <ul>
             <li repeat.for="training of trainingList">${training.trainingName} ${training.trainingLength} ${training.trainingComments}</li>
         </ul>
+        </div>
+        <button onclick="window.location.href='http://localhost:9000/#/main'" class="animatsioonigaNupp"><span>Tagasi</span></button>
     </div>
 </template>

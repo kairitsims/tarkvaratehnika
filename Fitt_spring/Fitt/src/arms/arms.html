@@ -6,17 +6,17 @@
         <p>${exercise.arv} ${exercise.yhik}</p>
         <p>${exercise.kirjeldus}</p>
     </div>
-    <a class="nupp2" href="../main/main.html" route-href="route: main;" >Tagasi</a>
     <form submit.delegate="addTraining()" id="form">
-     <table class="trainingtable">
+     <table class="CommentTable">
           <tr>
             <td><label class="trainingComments" for="trainingComments">Kommentaar</label>
             </td>
             <td><input id="trainingComments" type="text" name="trainingComments" value.bind="trainingData.trainingComments"></td> 
           </tr>
           <tr>
-            <td><input type="submit" value="Salvesta treening"></td> 
-          </tr>
+            <td><button onclick="window.location.href='http://localhost:9000/#/history'" class="animatsioonigaNupp" ><span>Salvesta treening</span></button></td>
+         <td><button onclick="window.location.href='http://localhost:9000/#/main'" class="animatsioonigaNupp"><span>Tagasi</span></button></td>
+         </tr>
         </table>
     </form>
 </template>

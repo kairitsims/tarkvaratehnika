@@ -22,8 +22,9 @@ export class training{
             .then(data => {
                 console.log("Server saatis " + data.trainingName);
         });
-        var landingUrl = "http://" + window.location.host + "#/history";
-        window.location.href = landingUrl
+        //Nii saaks ka lahendada
+        //var landingUrl = "http://" + window.location.host + //"#/history";
+        //window.location.href = landingUrl
     }
    
 }
