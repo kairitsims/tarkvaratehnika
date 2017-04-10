@@ -6,18 +6,20 @@
     <p>${exercise.arv}</p>
     <p>${exercise.kirjeldus}</p>
     </div>
-    <a class="nupp2" href="../main/main.html" route-href="route: main;" >Tagasi</a>
     <form submit.delegate="addTraining()" id="form">
-     <table class="trainingtable">
+     <table class="CommentTable">
           <tr>
             <td><label class="trainingComments" for="trainingComments">Kommentaar</label>
             </td>
-            <td><input id="trainingComments" type="text" name="trainingComments" value.bind="trainingData.trainingComments"></td> 
-          </tr>
-          <tr>
-            <td><input class="nupp" type="submit" name="Lisa treening"></td> 
-          </tr>
+            <td><input id="trainingComments" type="text" name="trainingComments" value.bind="trainingData.trainingComments"></td>
+        </tr>
         </table>
-        </form>
+        <table class="CommentTable">
+         <tr>
+             <td><button onclick="window.location.href='http://localhost:9000/#/history'" class="animatsioonigaNupp" ><span>Salvesta treening</span></button></td>
+         </tr>
+        </table>
+    </form>
+   <button onclick="window.location.href='http://localhost:9000/#/main'" class="animatsioonigaNupp"><span>Tagasi</span></button>
 
 </template>

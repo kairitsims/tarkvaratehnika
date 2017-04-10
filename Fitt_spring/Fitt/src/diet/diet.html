@@ -1,5 +1,5 @@
 <template>
-    <div><div class="diet">
+    <div class=bigdiettable><div class="diet">
         <h1>Lisa uus</h1>
         <form submit.delegate="addDiet()" id="form">
         <table class="diettable">
@@ -13,14 +13,14 @@
           </tr>
           <tr>
             <td><button onclick="location.reload()" class="animatsioonigaNupp" ><span>Lisa toit päevikusse</span></button></td>
-            <td><button onclick="window.location.href='http://localhost:9000/#/main'" class="animatsioonigaNupp"><span>Tagasi</span></button></td> 
+            <td><button onclick="window.location.href='http://localhost:9000/#/main'" class="animatsioonigaNupp" type="button"><span>Tagasi</span></button></td> 
           </tr>
         </table>
     </form>
     </div><div class="DietDiaryScroll">
         <h3>Toitumispäevik</h3>
         <ul>
-            <li repeat.for="diet of dietList">${diet.foodName} ${diet.foodAmount}</li>
+            <li class="diets" repeat.for="diet of dietList">${diet.foodName} ${diet.foodAmount}</li>
         </ul>
     </div></div>
 </template>

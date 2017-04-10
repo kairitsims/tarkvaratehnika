@@ -28,7 +28,7 @@ export class diet{
         
         let client = new HttpClient();
         
-        client.fetch('http://localhost:8080/diet')
+        client.fetch('http://localhost:8080/diet/' + AureliaCookie.get('username'))
             .then(response => response.json())
             .then(diets => this.dietList = diets);
 
