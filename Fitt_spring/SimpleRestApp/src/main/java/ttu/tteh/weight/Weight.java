@@ -15,6 +15,6 @@ public class Weight {
 	@GeneratedValue
 	long id;
 	String username;
-	double weight;
+	String weight;
 	String date;
 }
