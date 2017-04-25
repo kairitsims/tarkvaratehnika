@@ -1,7 +1,6 @@
 package ttu.tteh.exercise;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import lombok.Getter;
