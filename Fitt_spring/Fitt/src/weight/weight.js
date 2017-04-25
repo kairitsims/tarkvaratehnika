@@ -1,26 +1,25 @@
 import {HttpClient, json} from 'aurelia-fetch-client'
 import {AureliaCookie} from 'aurelia-cookie'
 
-export class diet{
+export class weight{
     
-    dietData = {}
-    dietList=[]
+    weightData = {}
+    weightList=[]
     
     
-    addDiet(){
+    addWeight(){
         
         let client = new HttpClient();
         
-        client.fetch('http://localhost:8080/diet/add', {
+        client.fetch('http://localhost:8080/weight/add', {
             'method': "POST",
             'body': json({ "username": AureliaCookie.get('username'),
-                         "foodName": this.dietData.foodName,
-                         "foodAmount": this.dietData.foodAmount,
+                         "weight": this.weightData.weight,
                          "date": (new Date()).toString().replace(/\S+\s(\S+)\s(\d+)\s(\d+)\s.*/,'$2-$1-$3')})
         })
             .then(response => response.json())
             .then(data => {
-                console.log("Server saatis " + data.foodName);
+                console.log("Server saatis " + data.weight);
         });
         document.getElementById("form").reset();
     }
@@ -29,9 +28,9 @@ export class diet{
         
         let client = new HttpClient();
         
-        client.fetch('http://localhost:8080/diet/' + AureliaCookie.get('username'))
+        client.fetch('http://localhost:8080/weight/' + AureliaCookie.get('username'))
             .then(response => response.json())
-            .then(diets => this.dietList = diets);
+            .then(weights => this.weightList = weights);
 
     }
    

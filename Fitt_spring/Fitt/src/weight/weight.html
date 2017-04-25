@@ -1,0 +1,22 @@
+<template>
+    <div><div>
+        <h1>Lisa kaal</h1>
+        <form submit.delegate="addWeight()" id="form">
+        <table>
+          <tr>
+            <td><label class="weigth" for="weight">Kaal</label></td>
+            <td><input id="weight" type="text" name="weight" value.bind="weightData.weight"></td> 
+          </tr>
+          <tr>
+            <td><button onclick="location.reload()" class="animatsioonigaNupp" ><span>Lisa kaal</span></button></td>
+            <td><button onclick="window.location.href='http://localhost:9000/#/main'" class="animatsioonigaNupp" type="button"><span>Tagasi</span></button></td> 
+          </tr>
+        </table>
+    </form>
+    </div><div>
+        <h3>Kaalupäevik</h3>
+        <ul>
+            <li repeat.for="weight of weightList">${weight.date} ${weight.weight}</li>
+        </ul>
+    </div></div>
+</template>

@@ -25,7 +25,8 @@ export class legs{
             'body': json({ "username": AureliaCookie.get('username'),
                          "trainingName": "Jalalihaste treening",
                          "trainingComments": this.trainingData.trainingComments,
-                         "trainingLength": finaltime })
+                         "trainingLength": finaltime,
+                         "date": (new Date()).toString().replace(/\S+\s(\S+)\s(\d+)\s(\d+)\s.*/,'$2-$1-$3')})
         })
             .then(response => response.json())
             .then(data => {

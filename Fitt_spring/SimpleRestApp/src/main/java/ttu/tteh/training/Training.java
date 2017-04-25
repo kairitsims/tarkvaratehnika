@@ -18,4 +18,5 @@ public class Training {
 	String trainingName;
 	String trainingLength;
 	String trainingComments;
+	String date;
 }

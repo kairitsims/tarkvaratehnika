@@ -1,4 +1,4 @@
-package ttu.tteh.diet;
+package ttu.tteh.goal;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,12 +10,11 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Diet {
+public class Goal {
 	@Id
 	@GeneratedValue
 	long id;
 	String username;
-	String foodName;
-	String foodAmount;
-	String date;
+	String goalName;
+	String goalDate;
 }
