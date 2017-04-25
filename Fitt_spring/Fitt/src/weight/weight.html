@@ -1,8 +1,8 @@
 <template>
-    <div><div>
+    <div class="bigweighttable"><div class="weight">
         <h1>Lisa kaal</h1>
         <form submit.delegate="addWeight()" id="form">
-        <table>
+        <table class=weighttable>
           <tr>
             <td><label class="weigth" for="weight">Kaal</label></td>
             <td><input id="weight" type="text" name="weight" value.bind="weightData.weight"></td> 
@@ -13,10 +13,17 @@
           </tr>
         </table>
     </form>
-    </div><div>
+    </div><div class="WeightScroll">
         <h3>Kaalupäevik</h3>
-        <ul>
-            <li repeat.for="weight of weightList">${weight.date} ${weight.weight}</li>
-        </ul>
+        <div repeat.for="weight of weightList">
+        <table class="diary">
+          <tr>
+            <th>${weight.date}</th>
+          </tr>
+          <tr>
+            <td>${weight.weight} </td>
+          </tr>            
+        </table>
+        </div>
     </div></div>
 </template>

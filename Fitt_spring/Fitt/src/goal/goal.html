@@ -1,8 +1,8 @@
 <template>
-    <div><div>
+    <div class="bigdiettable"><div class="goal">
         <h1>Lisa uus eesmärk</h1>
         <form submit.delegate="addGoal()" id="form">
-        <table>
+        <table class="goaltable">
           <tr>
             <td><label class="goalName" for="goalName">Eesmärk</label></td>
             <td><input id="goalName" type="text" name="goalName" value.bind="goalData.goalName"></td> 
@@ -17,10 +17,17 @@
           </tr>
         </table>
     </form>
-    </div><div>
+    </div><div class="DietDiaryScroll">
         <h3>Eesmärgid</h3>
-        <ul>
-            <li repeat.for="goal of goalList">${goal.goalName} ${goal.goalDate}</li>
-        </ul>
+        <div repeat.for="goal of goalList">
+        <table class="diary">
+          <tr>
+            <th>Tähtaeg: ${goal.goalDate}</th>
+          </tr>
+          <tr>
+            <td>Eesmärk: ${goal.goalName}</td>
+          </tr>   
+        </table>
+        </div>
     </div></div>
 </template>

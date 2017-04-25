@@ -19,8 +19,18 @@
     </form>
     </div><div class="DietDiaryScroll">
         <h3>Toitumispäevik</h3>
-        <ul>
-            <li class="diets" repeat.for="diet of dietList">${diet.foodName} ${diet.foodAmount} ${diet.date}</li>
-        </ul>
+        <div repeat.for="diet of dietList">
+        <table class="diary">
+          <tr>
+            <th>${diet.date}</th>
+          </tr>
+          <tr>
+            <td>${diet.foodName}</td>
+          </tr>   
+          <tr>
+            <td>${diet.foodAmount}</td>
+          </tr> 
+        </table>
+        </div>
     </div></div>
 </template>

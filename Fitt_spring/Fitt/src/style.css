@@ -172,14 +172,32 @@ img{
 	margin: 30px;
 }
 
+.goal{
+	background: url('src/images/goals.jpg');
+	text-align: center;
+    width: 600px;
+    height: 400px;
+    color: white;
+    margin-top: 70px;
+	margin-left: 70px;
+	text-shadow: 1px 1px #474545;
+}
+
+.goaltable{
+	font-size: 25px;
+	margin-top: 100px;
+	margin-left: 10px;
+}
+
 .diet{
 	background: url('src/images/diet.jpg');
 	text-align: center;
-    	width: 600px;
-    	height: 400px;
-    	color: white;
-    	margin-top: 70px;
+    width: 600px;
+    height: 400px;
+    color: white;
+    margin-top: 70px;
 	margin-left: 70px;
+	text-shadow: 1px 1px #474545;
 }
 
 .DietDiaryScroll{
@@ -191,9 +209,7 @@ img{
 .bigdiettable{
 	display: inline-flex;
 }
-.diets{
-	background-color: #efefef;
-}
+
 .diettable{
 	font-size: 25px;
 	margin-top: 100px;
@@ -209,12 +225,42 @@ img{
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
+	text-shadow: 1px 1px #474545;
 }
 
 .trainingtable{
 	align: centre;
 	font-size: 25px;
 	margin-top: 75px;
+	margin-left: 25px;
+}
+
+.bigweighttable{
+	display: inline-flex;
+}
+
+.WeightScroll{
+	width: 300px;
+	height: 375px;
+	margin-top: 70px;
+	overflow-y: scroll;
+}
+
+.weight{
+	background: url('src/images/weight.jpg');
+	text-align: centre;
+    width: 500px;
+    height: 375px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+	text-shadow: 1px 1px #474545;
+}
+
+.weighttable{
+	font-size: 25px;
+	margin-top: 150px;
 	margin-left: 25px;
 }
 
@@ -356,4 +402,84 @@ img{
 	text-align: center;
   	vertical-align: middle
 	
+}
+
+.diary{
+	font-family:Arial, Helvetica, sans-serif;
+	width:150px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #261717;
+	font-size:17px;
+	background:#eaebec;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+
+.diary th {
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #558ED5;
+}
+.diary th:first-child {
+	text-align: left;
+	padding-left:20px;
+}
+.diary tr:first-child th:first-child {
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+.diary tr:first-child th:last-child {
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+.diary tr {
+	text-align: center;
+	padding-left:20px;
+}
+.diary td:first-child {
+	text-align: left;
+	padding-left:20px;
+	border-left: 0;
+}
+.diary td {
+	padding:18px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+.diary tr.even td {
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+.diary tr:last-child td {
+	border-bottom:0;
+}
+.diary tr:last-child td:first-child {
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.diary tr:last-child td:last-child {
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
 }
