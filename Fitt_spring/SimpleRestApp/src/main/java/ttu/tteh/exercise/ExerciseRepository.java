@@ -13,7 +13,5 @@ public interface ExerciseRepository extends CrudRepository<Exercise, String>{
 	
 	public List<Exercise> findByLiik(String liik);
 	
-	//@Query("SELECT * FROM fitt exercise WHERE exercise.liik = ?liik ")
-	//public List<Exercise> findByLiik(String liik);
 
 }
