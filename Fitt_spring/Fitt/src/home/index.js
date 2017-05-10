@@ -13,8 +13,6 @@ export class Home{
             domain: '', // Domain restricted cookie
             secure: false // Either true or false
         });
-        console.log(x)
-        console.log(y)
     
         let client = new HttpClient();
         
@@ -22,11 +20,11 @@ export class Home{
             .then(response => response.json())
             .then(data => {
                 if(JSON.stringify(data.password) === '"'+y+'"'){
-                    console.log("Korras")
+                    
                     var landingUrl = "http://" + window.location.host + "#/main";
                     window.location.href = landingUrl
                 }else{
-                    console.log("Vale password")
+                    
                     alert("Vale salasõna! Proovige uuesti")
                 }
             })

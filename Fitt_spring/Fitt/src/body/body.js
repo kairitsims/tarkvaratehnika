@@ -16,7 +16,7 @@ export class body{
         var time2 = AureliaCookie.get('time');
         let time1 = newTime2 - time2
         var finaltime = this.millisToMinutesAndSeconds(time1) + " minutit";
-        console.log(finaltime)
+        
         
         let client = new HttpClient();
         

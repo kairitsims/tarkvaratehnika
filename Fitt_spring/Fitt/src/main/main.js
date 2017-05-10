@@ -6,7 +6,7 @@ export class main{
     userData = {}
 
     goToPage(pageName){
-        console.log("Server saatis" + pageName);
+        
         var landingUrl = "http://" + window.location.host + "#/" + pageName;
         window.location.href = landingUrl;
     }
@@ -14,7 +14,6 @@ export class main{
     activate(){
         let aeg = new Date()
         let aeg2 = aeg.getTime();
-        console.log(aeg2)
-        console.log(AureliaCookie.get('username'));
+        
     }
 }
